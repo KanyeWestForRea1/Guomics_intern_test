@@ -99,7 +99,7 @@ class DecoderDilatedConvBlock(nn.Module):
         return x
 
 class AE(nn.Module):
-    def __init__(self,  latent_dim=16, num_encoder_blocks=9, num_decoder_blocks=9, dilation=3):
+    def __init__(self,  latent_dim=16, num_encoder_blocks=3, num_decoder_blocks=3, dilation=3):
         super(AE, self).__init__()        
         
         self.conv_up = nn.Sequential(
